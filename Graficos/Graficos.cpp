@@ -43,13 +43,15 @@ void actualizar()
 
 void dibujar()
 {
+	//TRIANGULO 1
 	glPushMatrix();
 
-	glTranslatef(0.2f, -0.2f, 0.0f);
+	
 	//glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
-	//glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
-	glRotatef(angulo, 0.0f, 0.0f, 1.0f);
-	glScalef(0.5f,0.5f,0.5f);
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f);
+	glTranslatef(0.0f, 0.2f, 0.0f);
+	//glRotatef(angulo, 0.0f, 0.0f, 1.0f);
+	glScalef(0.2f,0.2f,0.2f);
 
 	glBegin(GL_TRIANGLES); //INICIA LA RUTINA
 
@@ -58,16 +60,65 @@ void dibujar()
 
 	
 
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(1.0f, 0.8f, 0.0f);
 	glVertex3f(-1.0f, -0.5f,0.0f);
-
-
-	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3f(0.0f, 0.5f, 0.0f);
-
-	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3f(1.0f, -0.5f, 0.0f);
 	
+
+	glEnd(); //FINALIZA LA RUTINA
+	glPopMatrix();
+
+
+	//TRIANGULO 2
+	glPushMatrix();
+
+	
+	//glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f);
+	glTranslatef(-0.2f, 0.0f, 0.0f);
+	//glRotatef(angulo, 0.0f, 0.0f, 1.0f);
+	glScalef(0.2f,0.2f,0.2f);
+
+	glBegin(GL_TRIANGLES); //INICIA LA RUTINA
+
+
+
+
+
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(-1.0f, -0.5f, 0.0f);
+	glVertex3f(0.0f, 0.5f, 0.0f);
+	glVertex3f(1.0f, -0.5f, 0.0f);
+
+
+	glEnd(); //FINALIZA LA RUTINA
+	glPopMatrix();
+
+	//TRIANGULO
+
+	glPushMatrix();
+
+	
+	//glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f);
+	glTranslatef(0.2f, 0.0f, 0.0f);
+	//glRotatef(angulo, 0.0f, 0.0f, 1.0f);
+	glScalef(0.2f,0.2f,0.2f);
+
+	glBegin(GL_TRIANGLES); //INICIA LA RUTINA
+
+
+
+
+
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(-1.0f, -0.5f, 0.0f);
+	glVertex3f(0.0f, 0.5f, 0.0f);
+	glVertex3f(1.0f, -0.5f, 0.0f);
+
 
 	glEnd(); //FINALIZA LA RUTINA
 	glPopMatrix();
